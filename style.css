@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+
+/*-------------
+  reuse
+  ------------*/
+
+.container{
+    width: 1150px;
+    margin: 0 auto;   
+}
+section{
+  padding: 90px 0px 30px 0px;
+}
+p{
+  color: #8b8b8b;
+  margin: 0px;
+}
+h3, h4{
+  color: rgb(51, 51, 51);
+  margin-bottom: 20px;
+}
+h4{
+  cursor: pointer;
+  font-size: 1.37rem;
+}
+h4:hover, h5:hover{
+  color:rgb(214, 88, 15);
+}
+h5{
+  cursor: pointer;
+  margin: 8px 0;
+}
+a{
+  text-decoration: none;
+  color:#8b8b8b ;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.img{
+  overflow: hidden;
+}
+img{
+  width: 100%;
+}
+.like{
+  position: absolute;
+  background-color:rgb(255, 255, 255);
+  border-radius: 50%;
+  padding:28px;
+  z-index: 1;
+  top: 420px;
+  left: 30px;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 50px;
+  width: 1223px;
+  margin: 0 auto;
+}
+
+
+
+/*-------------
+  header
+  ------------*/
+
+header{
+    position: fixed;
+    z-index:3;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    top: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav{
+    margin-top: 16px;
+}
+.nav ul li{
+    display: inline-block;
+    padding: 10px; 
+    color: #8b8b8b;   
+}
+.logo img{
+    height: 21px;
+}
+.menue{
+  position: relative;
+  cursor: pointer;
+}
+.menue:hover::after{
+  content :'';
+  border-bottom :2px solid rgb(214, 15, 15);
+  padding: 0 8px;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+   
+}
+.menue:hover{
+  color: black;
+}
+.sub-menue{
+  position: absolute;
+  background-color: black;
+  top: 80px;
+  width: 150px;
+  display: none;
+}
+.sub{
+  position: absolute;
+  left: 150px;
+  bottom:-70px;
+  width: 300px;
+  background-color: darkblue;
+
+}
+
+
+
+/*-------------
+  slideshow
+  ------------*/
+
+.slideshow{
+    cursor: pointer;
+    margin-top: 100px;
+}
+.slides{
+    position: relative;
+}
+.slide{
+    display: none;
+
+}
+.slide img{
+    height: 500px; 
+    filter: brightness(0.4);
+}
+.active{
+    display: block;
+}
+.prev,.next{
+    position: absolute;
+    top: 40%;
+    font-size: 40px;
+    color: white;
+    padding: 20px;
+}
+.prev{
+    left: 90px;
+}
+.next{
+    right: 90px;
+}
+
+
+
+/*-------------
+  article
+  ------------*/
+  .article{
+    background-color: rgb(243, 243, 243);
+  }
+  .articleTitle{
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .col{
+      padding: 20px;
+      
+  }
+  .articlePost{
+      display: flex;
+  }
+  .article img{
+    border-radius: 3px 3px 0px 0px;
+    transition: all .3s ease-in-out; 
+  }
+  .article img:hover {
+      transform: scale(1.1);
+      filter: brightness(0.4);
+  }
+  .post{
+    margin-bottom: 40px;
+    background-color: white;
+    position: relative;
+    
+  }
+  .baby{
+    height: 857px; 
+ 
+  }
+  .banafsh{
+    height: 666px; 
+  }
+  .mobil{
+    height: 952px;  
+  }
+  .headset{
+    height: 636px;  
+  }
+  .blue{
+    height: 636px;  
+  }
+  .sea{
+    height: 974px;
+  }
+
+  .articleText{
+    padding: 40px;
+    margin-top: 30px;
+  }
+  .line{
+    position: relative;
+    margin-right: 10px;
+  }
+  .line::after{
+    content :'';
+    border-bottom :2px solid rgb(214, 88, 15);
+    padding: 0 5px;
+    position: absolute;
+    bottom: 5px;
+    right: -12px;
+  }
+
+  .like-banafsh, .like-headset, .like-blue{
+    top: 200px;
+  }
+  .like-mobil{
+    top: 515px;
+  }
+  .like-sea{
+    top: 540px;
+  }
+  .btn-art{
+    text-align: center;
+  }
+  .btn{
+    padding: 0.85rem 9rem;
+    border-radius: 0px;
+    background-color: rgb(51, 51, 51);
+    border: 0px;
+    color: white;
+  }
+  .btn:hover{
+    background-color:rgb(214, 88, 15) ;
+    color: white;
+  }
+
+
+
+  /*-------------
+  technology
+  ------------*/
+  .technology{
+    position: relative;
+  }
+  .techPost{
+    display: flex;
+    justify-content: space-between;
+    width: 1223px;
+    margin: 0 auto;
+  }
+  .techPost img{
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+  }
+  .techPost img:hover{
+    transform: scale(1.1);
+    filter: brightness(0.4);
+  }
+  .like-tech{
+    top: 510px;
+    left: 5px;
+  }
+  .m-techPost{
+    display: flex;
+    justify-content: space-between;
+  }
+  .m-techPost img{
+    width: 80%;
+  }
+  .avatar{
+  width: 5%;
+  border-radius: 50px;
+  }
+
+
+
+/*-------------
+    banner
+------------*/
+  .banner{
+    width: 1223px;
+    margin: 0 auto;
+  }
+
+
+
+/*-------------
+    fasion
+------------*/
+
+
+
