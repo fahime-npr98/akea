@@ -5,6 +5,7 @@
 }
 body{
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 
@@ -13,21 +14,16 @@ body{
 /*-------------
   reuse
   ------------*/
-
-.container{
-    width: 1150px;
-    margin: 0 auto;   
-}
 section{
-  padding: 90px 0px 30px 0px;
+  padding: 80px 0px 50px 0px;
 }
 p{
   color: #8b8b8b;
-  margin: 0px;
+  margin-top: 20px;
 }
 h3, h4{
   color: rgb(51, 51, 51);
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 h4{
   cursor: pointer;
@@ -44,10 +40,15 @@ a{
   text-decoration: none;
   color:#8b8b8b ;
   font-size: 13px;
-  margin-bottom: 20px;
+}
+a:hover{
+  color: #8b8b8b;
 }
 .img{
   overflow: hidden;
+  margin-bottom: 40px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 img{
   width: 100%;
@@ -69,6 +70,14 @@ img{
   width: 1223px;
   margin: 0 auto;
 }
+.orang{
+  color: rgb(214, 88, 15);
+}
+ul li{
+  padding: 10px; 
+  color: #8b8b8b; 
+  cursor: pointer;  
+}
 
 
 
@@ -77,26 +86,9 @@ img{
   ------------*/
 
 header{
-    position: fixed;
-    z-index:3;
     background-color: white;
     width: 100%;
     height: 100px;
-    top: 0;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.nav{
-    margin-top: 16px;
-}
-.nav ul li{
-    display: inline-block;
-    padding: 10px; 
-    color: #8b8b8b;   
 }
 .logo img{
     height: 21px;
@@ -112,17 +104,36 @@ header{
   position: absolute;
   top: 30px;
   left: 0px;
-   
 }
 .menue:hover{
   color: black;
 }
 .sub-menue{
   position: absolute;
-  background-color: black;
+  background-color:rgb(51, 51, 51);
   top: 80px;
-  width: 150px;
+  left: 0%;
   display: none;
+}
+.sub-menuef{
+  width: 1000px;
+  position: absolute;
+  background-color:rgb(51, 51, 51);
+  top: 80px;
+  right:-250px;
+  display: none;
+}
+.sub-menuef div{
+  padding: 10px 0px;
+}
+.sub-menue li{
+  padding-right: 50px;
+}
+.menue:hover .sub-menue{
+  display:inline ;
+}
+.menue:hover .sub-menuef{
+  display: inline;
 }
 .sub{
   position: absolute;
@@ -130,6 +141,7 @@ header{
   bottom:-70px;
   width: 300px;
   background-color: darkblue;
+  display: none;
 
 }
 
@@ -187,9 +199,6 @@ header{
       padding: 20px;
       
   }
-  .articlePost{
-      display: flex;
-  }
   .article img{
     border-radius: 3px 3px 0px 0px;
     transition: all .3s ease-in-out; 
@@ -226,11 +235,10 @@ header{
 
   .articleText{
     padding: 40px;
-    margin-top: 30px;
   }
   .line{
     position: relative;
-    margin-right: 10px;
+    margin-right: 20px;
   }
   .line::after{
     content :'';
@@ -238,7 +246,8 @@ header{
     padding: 0 5px;
     position: absolute;
     bottom: 5px;
-    right: -12px;
+    right: -18px;
+    
   }
 
   .like-banafsh, .like-headset, .like-blue{
@@ -274,16 +283,15 @@ header{
     position: relative;
   }
   .techPost{
-    display: flex;
-    justify-content: space-between;
     width: 1223px;
     margin: 0 auto;
   }
-  .techPost img{
+
+  .img img{
     border-radius: 3px;
     transition: all .3s ease-in-out;
   }
-  .techPost img:hover{
+  .img img:hover{
     transform: scale(1.1);
     filter: brightness(0.4);
   }
@@ -291,12 +299,8 @@ header{
     top: 510px;
     left: 5px;
   }
-  .m-techPost{
-    display: flex;
-    justify-content: space-between;
-  }
   .m-techPost img{
-    width: 80%;
+    width: 90%;
   }
   .avatar{
   width: 5%;
@@ -311,6 +315,27 @@ header{
   .banner{
     width: 1223px;
     margin: 0 auto;
+
+  }
+  .banner2{
+    position: relative;
+  }
+  .subscribe{
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    right: 120px;
+  }
+  .subscribe button{
+    border: none;
+    color: white;
+    background-color: rgb(51, 51, 51);
+    padding: 15px 40px;
+  }
+  .subscribe input{
+    border: none;
+    padding: 15px 60px;
+    color: #8b8b8b;
   }
 
 
@@ -318,6 +343,84 @@ header{
 /*-------------
     fasion
 ------------*/
+.fashion-post{
+  position: relative;
+}
+.fashpost1 img{
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+  max-height: 1000px;
+}
+.fashpost1 img:hover{
+  transform: scale(1.1);
+  filter: brightness(0.4);
+}
+.like-fash{
+  top: 260px;
+  left: 0px;
+}
+
+
+
+
+/*-------------
+    travel
+------------*/
+.trapost{
+  padding: 0 20px;
+  position: relative;
+}
+.like-tra{
+  top: 260px;
+  left: 0px;
+}
+
+
+/*-------------
+    gallery
+------------*/
+.gallery{
+  background-color: rgb(243, 243, 243);
+}
+.title-gallery{
+  text-align: center;
+  padding-bottom: 40px;
+}
+.gallery img{
+  width: 19%;
+}
+
+
+
+/*-------------
+    footer
+------------*/
+footer{
+  background-color:#1c2433 ; 
+  padding: 60px 90px 20px 90px;
+  line-height: 30px;
+}
+footer p{
+  color: #7f899b;
+  cursor: pointer;
+}
+footer p:hover{
+  color: #ffffff;
+}
+.sub-footer p {
+  color: #7f899b;
+}
+.sub-footer li{
+  color: #7f899b;
+}
+.sub-footer li:hover{
+  color: #ffffff;
+}
+.sub-footer{
+  padding: 38px 90px;
+  background-color: #353f4c;
+}
+
 
 
 
