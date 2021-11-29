@@ -5,7 +5,6 @@
 }
 body{
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
 }
 
 
@@ -39,7 +38,7 @@ h5{
 a{
   text-decoration: none;
   color:#8b8b8b ;
-  font-size: 13px;
+  font-size: 10px;
 }
 a:hover{
   color: #8b8b8b;
@@ -57,18 +56,19 @@ img{
   position: absolute;
   background-color:rgb(255, 255, 255);
   border-radius: 50%;
-  padding:28px;
+  padding:20px 30px;
   z-index: 1;
   top: 420px;
-  left: 30px;
+  left: 60px;
+  display: none;
 }
 .title{
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 50px;
-  width: 1223px;
-  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .orang{
   color: rgb(214, 88, 15);
@@ -77,8 +77,16 @@ ul li{
   padding: 10px; 
   color: #8b8b8b; 
   cursor: pointer;  
+  font-size: 15px;
 }
-
+.container1{
+  width: 970px;
+  margin: 0 auto;
+}
+i{
+  cursor: pointer;
+  font-size: 13px;
+}
 
 
 /*-------------
@@ -93,9 +101,13 @@ header{
 .logo img{
     height: 21px;
 }
+.logo{
+  padding-bottom: 50px;
+}
 .menue{
   position: relative;
   cursor: pointer;
+  padding-bottom: 60px;
 }
 .menue:hover::after{
   content :'';
@@ -114,35 +126,44 @@ header{
   top: 80px;
   left: 0%;
   display: none;
+  width: 150px;
+}
+.sub-menuel{
+  width: 200px;
 }
 .sub-menuef{
   width: 1000px;
   position: absolute;
   background-color:rgb(51, 51, 51);
-  top: 80px;
-  right:-250px;
+  top: 65px;
+  right:-400px;
   display: none;
 }
-.sub-menuef div{
-  padding: 10px 0px;
-}
-.sub-menue li{
-  padding-right: 50px;
-}
+
+
 .menue:hover .sub-menue{
   display:inline ;
 }
 .menue:hover .sub-menuef{
   display: inline;
 }
+.subr{
+  position: relative;
+}
+.subr:hover .sub{
+  display: inline;
+}
 .sub{
   position: absolute;
-  left: 150px;
-  bottom:-70px;
-  width: 300px;
+  right: -150px;
+  top:0px;
+  width: 150px;
   background-color: darkblue;
   display: none;
-
+}
+.icon{
+  color:#8b8b8b ;
+  padding-bottom: 40px;
 }
 
 
@@ -195,10 +216,7 @@ header{
     text-align: center;
     padding-bottom: 30px;
   }
-  .col{
-      padding: 20px;
-      
-  }
+
   .article img{
     border-radius: 3px 3px 0px 0px;
     transition: all .3s ease-in-out; 
@@ -210,31 +228,11 @@ header{
   .post{
     margin-bottom: 40px;
     background-color: white;
-    position: relative;
-    
-  }
-  .baby{
-    height: 857px; 
- 
-  }
-  .banafsh{
-    height: 666px; 
-  }
-  .mobil{
-    height: 952px;  
-  }
-  .headset{
-    height: 636px;  
-  }
-  .blue{
-    height: 636px;  
-  }
-  .sea{
-    height: 974px;
   }
 
+
   .articleText{
-    padding: 40px;
+    padding: 20px;
   }
   .line{
     position: relative;
@@ -279,14 +277,6 @@ header{
   /*-------------
   technology
   ------------*/
-  .technology{
-    position: relative;
-  }
-  .techPost{
-    width: 1223px;
-    margin: 0 auto;
-  }
-
   .img img{
     border-radius: 3px;
     transition: all .3s ease-in-out;
@@ -300,7 +290,7 @@ header{
     left: 5px;
   }
   .m-techPost img{
-    width: 90%;
+    width: 80%;
   }
   .avatar{
   width: 5%;
@@ -312,11 +302,7 @@ header{
 /*-------------
     banner
 ------------*/
-  .banner{
-    width: 1223px;
-    margin: 0 auto;
-
-  }
+ 
   .banner2{
     position: relative;
   }

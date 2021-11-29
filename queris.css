@@ -1,0 +1,66 @@
+@media only screen and (min-width:375px){
+    .container1{
+        width: 360px;
+        margin: 0 auto;
+      }
+}
+@media only screen and (min-width:576px){
+    .container1{
+        width: 570px;
+        margin: 0 auto;
+      }
+}
+@media only screen and (min-width:768px){
+    .container1{
+        width: 760px;
+        margin: 0 auto;
+      } 
+      .fashpost1{
+        padding: 0px;
+    }
+
+}
+@media only screen and (min-width:992px){
+    .container1{
+        width: 950px;
+        margin: 0 auto;
+      }
+
+      .baby{
+        height: 857px; 
+     
+      }
+      .banafsh{
+        height: 666px; 
+      }
+      .mobil{
+        height: 952px;  
+      }
+      .headset{
+        height: 636px;  
+      }
+      .blue{
+        height: 636px;  
+      }
+      .sea{
+        height: 974px;
+      }
+}
+@media only screen and (min-width:1200px){
+    .container1{
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .like{
+          display: block;
+      }
+      .post, .technology{
+        position: relative;
+      }
+}
+@media only screen and (min-width:1400px){
+    .container1{
+        width: 1380px;
+        margin: 0 auto;
+      }
+}
