@@ -45,7 +45,7 @@ a:hover{
 }
 .img{
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -56,11 +56,12 @@ img{
   position: absolute;
   background-color:rgb(255, 255, 255);
   border-radius: 50%;
-  padding:20px 30px;
+  padding:10px 20px;
   z-index: 1;
-  top: 420px;
-  left: 60px;
+  top: 370px;
+  left: 30px;
   display: none;
+  text-align: center;
 }
 .title{
   display: flex;
@@ -80,7 +81,7 @@ ul li{
   font-size: 15px;
 }
 .container1{
-  width: 970px;
+  width: 900px;
   margin: 0 auto;
 }
 i{
@@ -99,11 +100,9 @@ header{
     height: 100px;
 }
 .logo img{
-    height: 21px;
+    width: 87px;
 }
-.logo{
-  padding-bottom: 50px;
-}
+
 .menue{
   position: relative;
   cursor: pointer;
@@ -183,8 +182,7 @@ header{
     display: none;
 
 }
-.slide img{
-    height: 500px; 
+.slide img{ 
     filter: brightness(0.4);
 }
 .active{
@@ -229,7 +227,10 @@ header{
     margin-bottom: 40px;
     background-color: white;
   }
-
+  .icon2{
+    color:#302e2e ;
+    
+  }
 
   .articleText{
     padding: 20px;
@@ -249,19 +250,19 @@ header{
   }
 
   .like-banafsh, .like-headset, .like-blue{
-    top: 200px;
+    top: 180px;
   }
   .like-mobil{
-    top: 515px;
+    top: 455px;
   }
   .like-sea{
-    top: 540px;
+    top: 480px;
   }
   .btn-art{
     text-align: center;
   }
   .btn{
-    padding: 0.85rem 9rem;
+    padding: 0.5rem 6rem;
     border-radius: 0px;
     background-color: rgb(51, 51, 51);
     border: 0px;
@@ -286,8 +287,8 @@ header{
     filter: brightness(0.4);
   }
   .like-tech{
-    top: 510px;
-    left: 5px;
+    top: 520px;
+    left: 30px;
   }
   .m-techPost img{
     width: 80%;
@@ -342,8 +343,8 @@ header{
   filter: brightness(0.4);
 }
 .like-fash{
-  top: 260px;
-  left: 0px;
+  top: 240px;
+  left: -20px;
 }
 
 
@@ -357,7 +358,7 @@ header{
   position: relative;
 }
 .like-tra{
-  top: 260px;
+  top: 215px;
   left: 0px;
 }
 
