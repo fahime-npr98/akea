@@ -51,6 +51,7 @@ a:hover{
 }
 img{
   width: 100%;
+  
 }
 .like{
   position: absolute;
@@ -108,6 +109,7 @@ header{
   cursor: pointer;
   padding-bottom: 60px;
 }
+
 .menue:hover::after{
   content :'';
   border-bottom :2px solid rgb(214, 15, 15);
@@ -157,7 +159,7 @@ header{
   right: -150px;
   top:0px;
   width: 150px;
-  background-color: darkblue;
+  background-color: rgb(51, 51, 51);
   display: none;
 }
 .icon{
@@ -212,7 +214,7 @@ header{
   }
   .articleTitle{
     text-align: center;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .article img{
@@ -248,7 +250,6 @@ header{
     right: -18px;
     
   }
-
   .like-banafsh, .like-headset, .like-blue{
     top: 180px;
   }
@@ -258,9 +259,7 @@ header{
   .like-sea{
     top: 480px;
   }
-  .btn-art{
-    text-align: center;
-  }
+
   .btn{
     padding: 0.5rem 6rem;
     border-radius: 0px;
@@ -281,17 +280,19 @@ header{
   .img img{
     border-radius: 3px;
     transition: all .3s ease-in-out;
+    
   }
   .img img:hover{
     transform: scale(1.1);
     filter: brightness(0.4);
+    display: block;
   }
   .like-tech{
-    top: 520px;
-    left: 30px;
+    top: 500px;
+    left: 60px;
   }
-  .m-techPost img{
-    width: 80%;
+  .m-techPost .img{
+    width:40%;
   }
   .avatar{
   width: 5%;
@@ -354,12 +355,12 @@ header{
     travel
 ------------*/
 .trapost{
-  padding: 0 20px;
+  margin: 0 15px;
   position: relative;
 }
 .like-tra{
-  top: 215px;
-  left: 0px;
+  top: 220px;
+  left: -20px;
 }
 
 
@@ -369,10 +370,7 @@ header{
 .gallery{
   background-color: rgb(243, 243, 243);
 }
-.title-gallery{
-  text-align: center;
-  padding-bottom: 40px;
-}
+
 .gallery img{
   width: 19%;
 }
@@ -406,6 +404,22 @@ footer p:hover{
 .sub-footer{
   padding: 38px 90px;
   background-color: #353f4c;
+}
+/*-------------
+    story
+------------*/
+.story{
+  background-color: white;
+}
+.story p{
+  font-size: 15px;
+  color: black;
+  width: 150px;
+  font-weight: bold;
+}
+.story .img{
+  width: 5%;
+  margin: 0 5px;
 }
 
 

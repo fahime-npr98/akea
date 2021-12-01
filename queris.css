@@ -1,54 +1,47 @@
 @media only screen and (min-width:375px){
     .container1{
-        width: 360px;
+        width: 300px;
         margin: 0 auto;
       }
+      .slide img{
+        height: 300px;
+      }
+
 }
 @media only screen and (min-width:576px){
     .container1{
-        width: 570px;
+        width: 540px;
         margin: 0 auto;
       }
 }
 @media only screen and (min-width:768px){
     .container1{
-        width: 760px;
+        width: 700px;
         margin: 0 auto;
       } 
-      .fashpost1{
-        padding: 0px;
+
+    .slide img{
+      height: 500px;
+    }
+    .btn{
+      padding: 0.85rem 9rem;
+      border-radius: 0px;
+      background-color: rgb(51, 51, 51);
+      border: 0px;
+      color: white;
     }
 
 }
 @media only screen and (min-width:992px){
     .container1{
-        width: 950px;
+        width: 900px;
         margin: 0 auto;
       }
 
-      .baby{
-        height: 857px; 
-     
-      }
-      .banafsh{
-        height: 666px; 
-      }
-      .mobil{
-        height: 952px;  
-      }
-      .headset{
-        height: 636px;  
-      }
-      .blue{
-        height: 636px;  
-      }
-      .sea{
-        height: 974px;
-      }
 }
 @media only screen and (min-width:1200px){
     .container1{
-        width: 1200px;
+        width: 1100px;
         margin: 0 auto;
       }
       .like{
