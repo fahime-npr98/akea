@@ -129,9 +129,6 @@ header{
   display: none;
   width: 150px;
 }
-.sub-menuel{
-  width: 200px;
-}
 .sub-menuef{
   width: 1000px;
   position: absolute;
@@ -139,6 +136,9 @@ header{
   top: 65px;
   right:-400px;
   display: none;
+}
+.layout{
+  width: 220px;
 }
 
 
@@ -150,20 +150,29 @@ header{
 }
 .subr{
   position: relative;
+  
+}
+.subr{
+  width: 100%;
 }
 .subr:hover .sub{
   display: inline;
 }
 .sub{
   position: absolute;
-  right: -150px;
+  right: -206px;
   top:0px;
-  width: 150px;
+  width: 206px;
   background-color: rgb(51, 51, 51);
   display: none;
+  list-style: none;
 }
 .icon{
   color:#8b8b8b ;
+  padding-bottom: 40px;
+}
+.icon i:hover{
+  color:rgb(214, 88, 15) ;
   padding-bottom: 40px;
 }
 
@@ -231,7 +240,10 @@ header{
   }
   .icon2{
     color:#302e2e ;
-    
+ 
+  }
+  .icon2 i:hover{
+    color: rgb(214, 88, 15);
   }
 
   .articleText{
@@ -373,6 +385,7 @@ header{
 
 .gallery img{
   width: 19%;
+  cursor: pointer;
 }
 
 
@@ -420,6 +433,10 @@ footer p:hover{
 .story .img{
   width: 5%;
   margin: 0 5px;
+}
+.story .img:hover{
+  transform:translate(0px,-5px);
+  box-shadow: 0 0 10px;
 }
 
 
